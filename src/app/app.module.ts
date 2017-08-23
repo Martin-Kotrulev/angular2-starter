@@ -12,7 +12,6 @@ import { CoreActions } from './store/core/core.actions';
 import { CoreModule } from './core/core.module';
 import { UsersModule } from './users/users.module';
 import { RoutesModule } from './routes.module';
-import { CarsModule } from './cars/cars.module';
 
 import { AppComponent } from './app.component';
 
@@ -26,8 +25,7 @@ import { AppComponent } from './app.component';
     UsersModule,
     CoreModule,
     HttpModule,
-    NgReduxModule,
-    CarsModule
+    NgReduxModule
   ],
   providers: [],
   bootstrap: [AppComponent]

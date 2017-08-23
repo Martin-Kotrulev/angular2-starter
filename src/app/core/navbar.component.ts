@@ -1,6 +1,6 @@
 import { Router } from '@angular/router';
 import { NgRedux } from 'ng2-redux';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 import { UserActions } from './../store/users/users.actions';
 import { AuthService } from './../users/auth.service';
@@ -11,7 +11,7 @@ import { IAppState } from './../store/app.state';
   templateUrl: './navbar.component.html',
 })
 export class NavbarComponent implements OnInit {
-  appName = 'CarSystem';
+  @Input() brand: string;
   authenticated: boolean;
   username: string;
 
